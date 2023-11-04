@@ -62,6 +62,7 @@ export const UsersForm=({refetchUsers}:{refetchUsers:()=>void})=>{
             </div>
         <input type="file" name="image" accept="image/png, image/jpg" id="" onChange={handleChange}/>
         <button type="submit">¡Subir Imagen!</button>
+        
 
 
         </form>
