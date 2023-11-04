@@ -20,9 +20,6 @@ export const getTasks=async(req,res)=>{
     }
 }
 
-
-
-
 export const postTasks = async (req, res) => {
     try {
         if (!req.body.title) {
