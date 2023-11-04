@@ -1,0 +1,24 @@
+.usersList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #efefef;
+    padding: 1rem;
+    gap: 0;
+}
+
+h2{
+    max-width: 200px;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 20px;
+}

@@ -2,12 +2,19 @@ import express from "express"
 import {upload} from "../config/multer.js";
 import {uploadFile} from '../util/uploadFile.js'
 import {User} from '../models/User.js'
+import { async } from "@firebase/util";
 
 
 const router=express()
 
-router.get('/user',(req,res)=>{
-    return res.json({message:'get user'})
+router.get('/user', async(req,res)=>{
+try {
+    const users=await User.find().sort({createdAt:-1})
+    res.status(200).json({users})
+
+} catch (error) {
+    return res.status(400).json({message:`ERROR! ${error}`})
+}
 })
 
 router.post('/createuser',upload.fields([{name: 'image', maxCount:1}]), async(req,res)=>{
