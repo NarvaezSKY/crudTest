@@ -4,11 +4,13 @@ import morgan from "morgan";
 import './db/db.js'
 import router from "./routes/task.routes.js";
 import authRouter from './routes/auth.routes.js'
+import cookieParser from "cookie-parser";
 
 const app=Express()
 app.use(cors())
 app.use(morgan('dev'))
 app.use(Express.json())
+app.use(cookieParser())
 
 const port=3000
 app.listen (3000,()=>{
