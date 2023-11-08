@@ -17,7 +17,11 @@ const Likes=()=>{
 
 
 const App=()=>{
-  return (<><Likes/></>)
+  return (<>
+  <div>
+    <h3>useState/useEffect</h3>
+    <Likes/></div>
+  </>)
 }
 
 export default App

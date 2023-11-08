@@ -18,13 +18,11 @@ const CounterFunction=({children})=>{
 
 
 return (
-    <counterContext.Provider
-    value={{counter, increment, decrement, reset}}>
+    <counterContext.Provider value={{counter, increment, decrement, reset}}>
 
     {children}
 
-
-</counterContext.Provider>
+    </counterContext.Provider>
 )
 
 }
