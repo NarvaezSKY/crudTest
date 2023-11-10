@@ -3,7 +3,7 @@ import {IUser} from '../interfaces'
 
 export const useUsers=()=>{
     const [users, setUsers]=useState<IUser[]|[]>([])
-    let fetchUsers=()=>{
+    const fetchUsers=()=>{
         fetch('http://localhost:3000/api/user',{
             headers: {
                 'Cache-Control': 'no-cache',
