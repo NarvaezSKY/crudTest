@@ -7,6 +7,7 @@ import CounterFunction from '../useContext/Component.jsx'
 import { Component } from '../useRef/Component.jsx'
 import {  PrintNumber } from '../useMemo/Component.jsx'
 import { Callback } from '../useCallback/Component.jsx'
+import Counter from '../useReducer/Component.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Component/>
     <PrintNumber/>
     <Callback/>
+    <Counter/>
   </React.StrictMode>
   </CounterFunction>
 )
